@@ -1,0 +1,194 @@
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background: url('../images/ed-sharpe.jpg') no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     -webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	/*width: 960px;*/
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+h1.home {
+     font-family: 'Archivo Black', sans-serif;
+     font-size: 55px;
+     margin-left: 15px;
+     margin-top: 5px;
+     color: black;
+}
+
+a:link {
+     text-decoration: none;
+     color: black;
+}
+
+a:visited {
+     text-decoration:none;
+     color: black;
+}
+
+a:hover {
+     color: white;
+     /*text-decoration:underline;*/
+}
+
+
+
+ul.menu {
+     /*width: 500px;*/
+     margin: 0px;
+     padding: 0px;
+     background-color: rgba(0, 0, 0, .7);
+     border-radius: 15px;
+     position:fixed;
+     top: 10px;
+     right: 10px;
+}
+
+.menu > li{
+     display: inline;
+     font-size: 30px;
+     font-family: 'Archivo Black', sans-serif;
+     /*margin: 0px, 0px, 120px, 0px;*/
+     margin: 15px;
+}
+h1.title {
+     font-style: italic;
+     font-family: 'Archivo Black', sans-serif;
+}
+article.art {
+     background-color: rgba(0, 0, 0, .7);
+     border-radius: 15px;
+     padding: 5px;
+     width: 1200px;
+     margin: auto;
+     color: white;
+     margin-top: 100px;
+}
+
+ul.social-media-menu {
+     position: fixed;
+     bottom: 5px;
+     right: 5px;
+     list-style-type: none;
+     border-radius: 15px;
+     background-color: rgba(255, 255, 255, .7);
+     margin: 0px;
+     padding: 2px;
+
+}
+
+li.social-menu {
+     display: inline;
+     padding: 3px;
+}
+
+article.video {
+     /*padding: 200px;*/
+     width: 900px;
+     margin: auto;
+     display: block;
+     color:  white;
+     text-shadow: 3px 3px 0px black;
+     font-family: "Archivo Black", sans-serif;
+}
+
+h1.video-title {
+     font-size: 40px;
+}
+
+div.map {
+     color: white;
+     width: 960px;
+     margin: auto;
+     margin-top: 35px;
+    
+}
+
+section.map-title {
+     margin-left: 235px;
+     color: white;
+     font-family: "Archivo Black", sans-serif;
+     text-shadow: 3px 3px 0px black;
+}
+
+section.music {
+     position: fixed;
+     bottom: 8px;
+}
+
+#albums {
+     /*position: fixed;*/
+     /*width: 900px;*/
+     margin: 25px auto auto;
+     text-align: center;
+     /*top: 350px;*/
+     /*left: 250px;*/
+     width: auto;
+}
+
+
+.map_border {
+     border: 5px solid black;
+}
+
+.album_art {
+     border: 5px solid black;
+}
